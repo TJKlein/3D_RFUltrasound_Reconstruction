@@ -11,6 +11,10 @@ To acquire the data, the ultrasound transducer was tracked with an optical track
 Conventional ultrasound images, commonly referred to as B-Mode, are the result of many processing
 steps optimizing data for visual assessment by physicians. However, at the core of ultrasound imaging pipeline lies the radio frequency (RF) data. Just lately, RF data has become more readily available to the research community such that its potential has not fully unveiled yet. From a data processing standpoint using RF data over B-Mode suggests many advantages. First of all, it is generally much richer in information due to the comparably higher resolution. Furthermore, it is not affected by non-linear post-processing steps such as log-compression and proprietary filter algorithms that change the noise statistics for reasons of improved visual appeal. In addition, it has nice probabilistic properties facilitating various ways of distributional modeling of ultrasound specific texture patterns, referred to as speckle noise.
 
+![RF to Bmode pipeline](https://github.com/TJKlein/3D_RFUltrasound_Reconstruction/blob/master/RFtoBmode.png)
+
+
+
 
 ## Citation
 If you use this code or find it somehow useful for your research, I would appreciate citation:
