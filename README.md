@@ -1,6 +1,7 @@
 # 3D RF Ultrasound Volume Reconstruction
 
-The code provided was produced as part of the Ph.D thesis ["Statistical Image Processing of Medical Ultrasound Radio Frequency Data "](https://mediatum.ub.tum.de/1100919). The software has two purposes: First, to record B-mode or RF sequences in combination with tracking data. Second, to reconstruct 3D volumes from raw RF ultrasound data (radio-frequency data) or conventional B-mode. To acquire the data, the ultrasound transducer was tracked with an optical tracking system.
+The code provided was produced as part of the Ph.D thesis ["Statistical Image Processing of Medical Ultrasound Radio Frequency Data "](https://mediatum.ub.tum.de/1100919). The software has multiple purposes: First, to record B-mode or RF sequences in combination with tracking data. Second, to reconstruct 3D volumes from raw RF ultrasound data (radio-frequency data) or conventional B-mode. Third, there was some preliminary functionality to reconstruct flow velocity from Doppler ultrasound video streams. 
+To acquire the data, the ultrasound transducer was tracked with an optical tracking system.
 
 RF data is the more or less unprocessed signal at the beginning of processing pipeline that generates the commonly known ultrasound B-mode images. Given the comparably high resolution of the data and the raw signal characteristics make RF data attractive for statistical image processing.  
 
