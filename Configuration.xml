@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><Configuration>
+<DataDirectory>C:/Tassilo/CompoundingRF/SampleData/</DataDirectory>
+<CalibrationDirectory>C:/Tassilo/CompoundingRF/SampleData/</CalibrationDirectory>
+<TargetDirectory>C:/phD/svn/apps/Compounding/</TargetDirectory>
+<TrackingFilename>C:/Tassilo/CompoundingRF/SampleData/us_tracking_out0.txt</TrackingFilename>
+<CalibrationFilename>C:/Tassilo/CompoundingRF/SampleData/sample.xml</CalibrationFilename>
+<VideoFilename>C:/Tassilo/CompoundingRF/SampleData/us_video_out0.avi</VideoFilename>
+
+<RFFilename>D:/Data/Prostate/forTassilo/PCARMRUS-00017/RF/TrackedImageSequence_20130104_114018.xml</RFFilename>
+<RFTrackingFilename>D:/Data/Prostate/forTassilo/PCARMRUS-00017/RF/TrackedImageSequence_20130104_114018.txt</RFTrackingFilename>
+<RFCalibrationFilename>D:/Data/BWH/BK_8848_3.xml</RFCalibrationFilename>
+<RFTargetFilename>E:/Recordings/US_Joint_Registration_Segmentation/Brain/Annika/RF/AnnikaMidbrainRF_0_2.RFC.xml</RFTargetFilename>
+<RFTargetDirectory>E:/Recordings/US_Joint_Registration_Segmentation/Brain/Annika/RF/</RFTargetDirectory>
+<RFTrackingDirectory>D:/Data/Prostate/forTassilo/PCARMRUS-00017/RF/</RFTrackingDirectory><RFCalibrationDirectory>D:/Data/BWH/</RFCalibrationDirectory><RFDataDirectory>D:/Data/Prostate/forTassilo/PCARMRUS-00017/RF/</RFDataDirectory></Configuration>

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D663975F-BA37-4FCB-83D8-81E89ED2F819}</ProjectGuid>
+    <RootNamespace>Compounding</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXmlPatterns;.;$(CAMP3RDPARTY)\VTK\include;$(CAMP3RDPARTY)\glew\include;$(CAMP3RDPARTY)\freeGLUT\include;$(CAMP3RDPARTY)\xerces-c\include;$(CAMP3RDPARTY)\boost;$(CAMP3RDPARTY)\Eigen;$(CAMPSRC)\camplib\include;$(CAMP3RDPARTY)\OpenCV\cv\include;$(CAMP3RDPARTY)\OpenCV\cxcore\include;$(CAMP3RDPARTY)\OpenCV\otherlibs\highgui\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;BOOST_ALL_DYN_LINK;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xerces-c_3.lib;freeglut.lib;glew32.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;opengl32.lib;Qt3Support4.lib;Camp_Numerics.lib;cv.lib;cxcore.lib;highgui.lib;vtkCommon.lib;vtkIO.lib;vtkFiltering.lib;vtkSys.lib;vtkMetaio.lib;vtkzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(CAMP3RDPARTY)\freeGLUT\bin\release;$(CAMP3RDPARTY)\VTK\lib\release;$(CAMP3RDPARTY)\glew\lib;C:\3rdparty\BaseClasses\lib;C:\Programme\Microsoft SDKs\Windows\v6.1\Lib;C:\3rdparty\MicrosoftDirectXSDK\Lib\x86;$(CAMP3RDPARTY)\xerces-c\lib;..\..\camplib\importlib;$(CAMP3RDPARTY)\OpenCV\lib;C:\Programme\MATLAB\R2009a\extern\lib\win32\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXmlPatterns;.;$(CAMP3RDPARTY)\glew\include;$(CAMP3RDPARTY)\Cg\include;$(CAMP3RDPARTY)\Coin\include;C:\Tassilo\3rdparty\boost_1_55_0\;C:\Tassilo\3rdparty\Eigen;$(CAMPSRC)\camplib\include;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\DataModel;C:\Tassilo\3rdparty\VTK6.0.0\bin\Imaging\Core;C:\Tassilo\3rdparty\VTK6.0.0\bin\IO\Image;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\ExecutionModel;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\Core;C:\Tassilo\3rdparty\opencv\build\include\;C:\Tassilo\3rdparty\VTK6.0.0\Common\ExecutionModel;C:\Tassilo\3rdparty\VTK6.0.0\Common;C:\Tassilo\3rdparty\VTK6.0.0\Common\DataModel;C:\Tassilo\3rdparty\VTK6.0.0\Common\Core;C:\Tassilo\3rdparty\VTK6.0.0\Imaging\Core;C:\Tassilo\3rdparty\VTK6.0.0\IO\Image;$(CAMP3RDPARTY)\FFTW\include;C:\Tassilo\3rdparty\MATLAB\R2012b\extern\include;C:\Tassilo\3rdparty\xerces-c-3.1.1\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;BOOST_ALL_DYN_LINK;NOMINMAX;_SECURE_SCL=0</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <OpenMPSupport>true</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/SUBSYSTEM:WINDOWS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>libmat.lib;libmex.lib;libmx.lib;xerces-c_3.lib;glew64.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5Widgets.lib;Qt5WebKit.lib;Qt5WebKitWidgets.lib;opengl32.lib;Qt5WinExtras.lib;opencv_core246.lib;opencv_highgui246.lib;opencv_imgproc246.lib;vtkCommonCore-6.0.lib;vtkIOCore-6.0.lib;vtkIOImage-6.0.lib;vtkCommonExecutionModel-6.0.lib;vtksys-6.0.lib;vtkImagingCore-6.0.lib;vtkzlib-6.0.lib;vtkCommonDataModel-6.0.lib;libfftw3-3.lib;libfftw3f-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Tassilo\3rdparty\MATLAB\R2012b\extern\lib\win64\microsoft;$(QTDIR)\lib\;$(CAMP3RDPARTY)\freeglut\lib\x64\release;$(CAMP3RDPARTY)\Glut64\lib;$(CAMP3RDPARTY)\glew\lib\x64;$(CAMP3RDPARTY)\BaseClasses\lib\x64;C:\Program Files\Microsoft SDKs\Windows\v7.0\Lib\x64;$(CAMP3RDPARTY)\MicrosoftDirectXSDK\Lib\x86;C:\Tassilo\3rdparty\xerces-c-3.1.1\Build\Win64\VC10\Release;..\..\camplib\importlib\x64;C:\Tassilo\3rdparty\opencv\build\x64\vc11\lib;C:\Tassilo\3rdparty\VTK6.0.0\bin\lib\Release;$(CAMP3RDPARTY)\FFTW\lib\x64;$(CAMP3RDPARTY)\Ultrasonix\amplio\lib;$(CAMP3RDPARTY)\Ultrasonix\pando\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXmlPatterns;.;$(CAMP3RDPARTY)\glew\include;$(CAMP3RDPARTY)\Cg\include;$(CAMP3RDPARTY)\Coin\include;$(CAMP3RDPARTY)\xerces-c\include;$(CAMP3RDPARTY)\boost;$(CAMP3RDPARTY)\Eigen;$(CAMPSRC)\camplib\include;$(CAMP3RDPARTY)\OpenCV\cv\include;$(CAMP3RDPARTY)\OpenCV\cxcore\include;$(CAMP3RDPARTY)\OpenCV\otherlibs\highgui\include;$(CAMP3RDPARTY)\VTK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;BOOST_ALL_DYN_LINK;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xerces-c_3D.lib;glew32.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;opengl32.lib;Qt3Support4.lib;cv.lib;cxcore.lib;highguid.lib;vtkCommon.lib;vtkIO.lib;vtkFiltering.lib;vtkSys.lib;vtkMetaio.lib;vtkzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(CAMP3RDPARTY)\glew\lib;C:\3rdparty\BaseClasses\lib;C:\Programme\Microsoft SDKs\Windows\v6.1\Lib;C:\3rdparty\MicrosoftDirectXSDK\Lib\x86;$(CAMP3RDPARTY)\xerces-c\lib;..\..\camplib\importlib;$(CAMP3RDPARTY)\OpenCV\lib;C:\Programme\MATLAB\R2009a\extern\lib\win32\microsoft;$(CAMP3RDPARTY)\VTK\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtXmlPatterns;.;$(CAMP3RDPARTY)\glew\include;$(CAMP3RDPARTY)\Cg\include;$(CAMP3RDPARTY)\Coin\include;C:\Tassilo\3rdparty\boost_1_55_0\;$(CAMP3RDPARTY)\Eigen;$(CAMPSRC)\camplib\include;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\DataModel;C:\Tassilo\3rdparty\VTK6.0.0\bin\Imaging\Core;C:\Tassilo\3rdparty\VTK6.0.0\bin\IO\Image;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\ExecutionModel;C:\Tassilo\3rdparty\VTK6.0.0\bin\Common\Core;C:\Tassilo\3rdparty\opencv\build\include\;C:\Tassilo\3rdparty\VTK6.0.0\Common\ExecutionModel;C:\Tassilo\3rdparty\VTK6.0.0\Common;C:\Tassilo\3rdparty\VTK6.0.0\Common\DataModel;C:\Tassilo\3rdparty\VTK6.0.0\Common\Core;C:\Tassilo\3rdparty\VTK6.0.0\Imaging\Core;C:\Tassilo\3rdparty\VTK6.0.0\IO\Image;$(CAMP3RDPARTY)\FFTW\include;C:\Tassilo\3rdparty\MATLAB\R2012b\extern\include;C:\Tassilo\3rdparty\xerces-c-3.1.1\src\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_XML_LIB;QT_OPENGL_LIB;BOOST_ALL_DYN_LINK;NOMINMAX;GLUT_BUILDING_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmat.lib;libmex.lib;libmx.lib;xerces-c_3.lib;glew64.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5Widgets.lib;Qt5WebKit.lib;Qt5WebKitWidgets.lib;opengl32.lib;Qt5WinExtras.lib;opencv_core246.lib;opencv_highgui246.lib;opencv_imgproc246.lib;vtkCommonCore-6.0.lib;vtkIOCore-6.0.lib;vtkIOImage-6.0.lib;vtkCommonExecutionModel-6.0.lib;vtksys-6.0.lib;vtkImagingCore-6.0.lib;vtkzlib-6.0.lib;vtkCommonDataModel-6.0.lib;libfftw3-3.lib;libfftw3f-3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Tassilo\3rdparty\MATLAB\R2012b\extern\lib\win64\microsoft;$(QTDIR)\lib\;$(CAMP3RDPARTY)\freeglut\lib\x64\release;$(CAMP3RDPARTY)\Glut64\lib;$(CAMP3RDPARTY)\glew\lib\x64;$(CAMP3RDPARTY)\BaseClasses\lib\x64;C:\Program Files\Microsoft SDKs\Windows\v7.0\Lib\x64;$(CAMP3RDPARTY)\MicrosoftDirectXSDK\Lib\x86;C:\Tassilo\3rdparty\xerces-c-3.1.1\Build\Win64\VC10\Release;..\..\camplib\importlib\x64;C:\Tassilo\3rdparty\opencv\build\x64\vc11\lib;C:\Tassilo\3rdparty\VTK6.0.0\bin\lib\Release;$(CAMP3RDPARTY)\FFTW\lib\x64;$(CAMP3RDPARTY)\Ultrasonix\amplio\lib;$(CAMP3RDPARTY)\Ultrasonix\pando\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="compounding.cpp" />
+    <ClCompile Include="DataTools.cpp" />
+    <ClCompile Include="GeometricTools.cpp" />
+    <ClCompile Include="glwidget.cpp" />
+    <ClCompile Include="GraphicTools.cpp" />
+    <ClCompile Include="IntensityCompounding.cpp" />
+    <ClCompile Include="liir.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="NumericTools.cpp" />
+    <ClCompile Include="RandomNumbers.cpp" />
+    <ClCompile Include="Reconstruction.cpp" />
+    <ClCompile Include="RFCompounding.cpp" />
+    <ClCompile Include="SlicesVisualization.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="VelocityVisualization.cpp" />
+    <ClCompile Include="VideoTools.cpp" />
+    <ClCompile Include="XMLTools.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_compounding.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_compounding.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="compounding.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DBOOST_ALL_DYN_LINK -DNOMINMAX  -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtXml\." -I"$(QTDIR)\include\QtOpenGL\." -I"$(QTDIR)\include\QtXmlPatterns\." -I".\." -I"$(CAMP3RDPARTY)\glew\include\." -I"$(CAMP3RDPARTY)\Cg\include\." -I"$(CAMP3RDPARTY)\Coin\include\." -I"$(CAMP3RDPARTY)\xerces-c\include\." -I"$(CAMP3RDPARTY)\boost\." -I"$(CAMP3RDPARTY)\Eigen\." -I"$(CAMPSRC)\camplib\include\." -I"$(CAMP3RDPARTY)\OpenCV\cv\include\." -I"$(CAMP3RDPARTY)\OpenCV\cxcore\include\." -I"$(CAMP3RDPARTY)\OpenCV\otherlibs\highgui\include\." -I"$(CAMP3RDPARTY)\VTK\include\." ".\compounding.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DBOOST_ALL_DYN_LINK -DNOMINMAX -DGLUT_BUILDING_LIB  -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtXml\." -I"$(QTDIR)\include\QtOpenGL\." -I"$(QTDIR)\include\QtXmlPatterns\." -I".\." -I"$(CAMP3RDPARTY)\Glut64\include\." -I"$(CAMP3RDPARTY)\glew\include\." -I"$(CAMP3RDPARTY)\Cg\include\." -I"$(CAMP3RDPARTY)\Coin\include\." -I"$(CAMP3RDPARTY)\xerces-c\include\." -I"$(CAMP3RDPARTY)\boost\." -I"$(CAMP3RDPARTY)\Eigen\." -I"$(CAMPSRC)\camplib\include\." -I"$(CAMP3RDPARTY)\OpenCV\include\." -I"$(CAMP3RDPARTY)\VTK\src\." -I"$(CAMP3RDPARTY)\VTK\src\Filtering\." -I"$(CAMP3RDPARTY)\VTK\src\IO\." -I"$(CAMP3RDPARTY)\VTK\src\Common\." ".\compounding.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DBOOST_ALL_DYN_LINK -DNOMINMAX  -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtXml\." -I"$(QTDIR)\include\QtOpenGL\." -I"$(QTDIR)\include\QtXmlPatterns\." -I".\." -I"$(CAMP3RDPARTY)\VTK\include\." -I"$(CAMP3RDPARTY)\glew\include\." -I"$(CAMP3RDPARTY)\freeGLUT\include\." -I"$(CAMP3RDPARTY)\xerces-c\include\." -I"$(CAMP3RDPARTY)\boost\." -I"$(CAMP3RDPARTY)\Eigen\." -I"$(CAMPSRC)\camplib\include\." -I"$(CAMP3RDPARTY)\OpenCV\cv\include\." -I"$(CAMP3RDPARTY)\OpenCV\cxcore\include\." -I"$(CAMP3RDPARTY)\OpenCV\otherlibs\highgui\include\." ".\compounding.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_OPENGL_LIB -DBOOST_ALL_DYN_LINK -DNOMINMAX  -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." -I"$(QTDIR)\include\QtXml\." -I"$(QTDIR)\include\QtOpenGL\." -I"$(QTDIR)\include\QtXmlPatterns\." -I".\." -I"$(CAMP3RDPARTY)\glew\include\." -I"$(CAMP3RDPARTY)\Cg\include\." -I"$(CAMP3RDPARTY)\Coin\include\." -I"$(CAMP3RDPARTY)\xerces-c\include\." -I"$(CAMP3RDPARTY)\boost\." -I"$(CAMP3RDPARTY)\Eigen\." -I"$(CAMPSRC)\camplib\include\." -I"$(CAMP3RDPARTY)\OpenCV\include\." -I"$(CAMP3RDPARTY)\VTK\src\." -I"$(CAMP3RDPARTY)\VTK\src\Filtering\." -I"$(CAMP3RDPARTY)\VTK\src\IO\." -I"$(CAMP3RDPARTY)\VTK\src\Common\." ".\compounding.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="DataTools.h" />
+    <ClInclude Include="GeometricTools.h" />
+    <ClInclude Include="glwidget.h" />
+    <ClInclude Include="GraphicTools.h" />
+    <ClInclude Include="iir.h" />
+    <ClInclude Include="IntensityCompounding.h" />
+    <ClInclude Include="NumericTools.h" />
+    <ClInclude Include="RandomNumbers.h" />
+    <ClInclude Include="Reconstruction.h" />
+    <ClInclude Include="RFCompounding.h" />
+    <ClInclude Include="SlicesVisualization.h" />
+    <ClInclude Include="VelocityVisualization.h" />
+    <ClInclude Include="VideoTools.h" />
+    <ClInclude Include="XMLTools.h" />
+    <ClInclude Include="GeneratedFiles\ui_compounding.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="compounding.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+    <CustomBuild Include="compounding.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" QtVersion="qt" QtVersion_x0020_Win32="qt" RccDir=".\GeneratedFiles" UicDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
