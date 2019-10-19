@@ -9,15 +9,15 @@ RF data is the more or less unprocessed signal at the beginning of processing pi
 If you use this code or find it somehow useful for your research, I would appreciate citation:
 
 
-''
+```
 @inproceedings{Klein2012StatisticalIP,
   title={Statistical Image Processing of Medical Ultrasound Radio Frequency Data},
   author={Tassilo Klein},
   year={2012}
 }
-''
+```
 
-''
+```
 @InProceedings{10.1007/978-3-642-33415-3_52,
 author="Klein, T.
 and Hansson, M.
@@ -33,9 +33,9 @@ publisher="Springer Berlin Heidelberg",
 address="Berlin, Heidelberg",
 pages="422--429"
 }
-''
+```
 
-''
+```
 @InProceedings{10.1007/978-3-319-24571-3_71,
 author="Klein, Tassilo
 and Wells, William M.",
@@ -50,9 +50,9 @@ publisher="Springer International Publishing",
 address="Cham",
 pages="595--602"
 }
-''
+```
 
-''
+```
 @InProceedings{10.1007/978-3-642-33415-3_52,
 author="Klein, T.
 and Hansson, M.
@@ -68,4 +68,4 @@ publisher="Springer Berlin Heidelberg",
 address="Berlin, Heidelberg",
 pages="422--429"
 }
-''
+```
