@@ -211,16 +211,10 @@ bool Reconstruction::getProjection(const int &_index, Eigen::VectorXf &solutionV
 		if ( !(_data->normalMatrix.rows() > 0) || !(_data->normalMatrix.cols() > 0) )
 			return false;
 
-		/*std::cout << "1.\t" <<_data->normalMatrix << std::endl << std::endl;
-		std::cout << "2.\t" << m_velocityField[_index] << std::endl << std::endl;
-		std::cout << "3.\t" << _data->velocityVector << std::endl;
-		*/
+		
 		_error = (_data->normalMatrix * m_velocityField[_index] - _data->velocityVector);
 		
 
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
 
 		float _sumError = 0.0f;
 		Eigen::VectorXf _sumNormal;
@@ -233,13 +227,12 @@ bool Reconstruction::getProjection(const int &_index, Eigen::VectorXf &solutionV
 			_sumNormal += _data->normalMatrix.row(i).transpose() * _error.row(i)[0];
 
 			float _temp = _error.row(i)[0];
-			//std::cout <<"Error: " << _temp << std::endl; 
-			//float _temp = _error.row(i)[0];
+			
 			_sumError += _temp;
 		}
 
-		solutionVector = _sumNormal;/* * _sumError;*/
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
+		solutionVector = _sumNormal;
+		
 
 
 		return true;
@@ -410,8 +403,7 @@ bool Reconstruction::getProjection(const int &x, const int &y, const int &z, Eig
 			_sumNormal += _data->normalMatrix.row(i).transpose();
 
 			float _temp = _error.row(i)[0];
-			//std::cout <<"Error: " << _temp << std::endl; 
-			//float _temp = _error.row(i)[0];
+			
 			_sumError += _temp;
 		}
 
@@ -434,22 +426,8 @@ bool Reconstruction::getApproximationError(const int &_index, Eigen::VectorXf  &
 
 		errorMatrix = Eigen::VectorXf::Zero(_data->normalMatrix.rows()/*, _data->normalMatrix.cols()*/);
 
-		//errorMatrix = Eigen::VectorXf::Zero(_data->normalMatrix.rows());
+		
 		errorMatrix = (_data->normalMatrix * m_velocityField[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-
-		/*for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}*/
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
 
 
 		return true;
@@ -470,23 +448,7 @@ bool Reconstruction::getApproximationError(const int &x, const int &y, const int
 
 		errorMatrix = Eigen::VectorXf::Zero(_data->normalMatrix.rows()/*, _data->normalMatrix.cols()*/);
 
-		//errorMatrix = Eigen::VectorXf::Zero(_data->normalMatrix.rows());
 		errorMatrix = (_data->normalMatrix * m_velocityField[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-
-		/*for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}*/
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
-
 
 		return true;
 	}
@@ -506,54 +468,11 @@ bool Reconstruction::getApproximationTemporaryError(const int &_index, Eigen::Ve
 
 		//errorVector = Eigen::VectorXf::Zero(_data->normalMatrix.rows());
 		errorMatrix = (_data->normalMatrix * m_velocityFieldUpdated[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-
-		/*for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}*/
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
 
 
 		return true;
 	}
 	return false;
-
-/*
-	int _index ;
-
-	if ( getIndex(x,y,z,_index)  )
-	{
-		VelocityData *_data = m_measurementField[_index];
-
-		errorMatrix = Eigen::MatrixXf::Zero(_data->normalMatrix.rows(), _data->normalMatrix.cols());
-
-		Eigen::VectorXf _error = (_data->normalMatrix * m_velocityFieldUpdated[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-		for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
-
-
-		return true;
-	}
-	return false;*/
 }
 
 
@@ -569,56 +488,12 @@ bool Reconstruction::getApproximationTemporaryError(const int &x, const int &y, 
 
 		errorMatrix = Eigen::VectorXf::Zero(_data->normalMatrix.rows()/*, _data->normalMatrix.cols()*/);
 
-		//errorVector = Eigen::VectorXf::Zero(_data->normalMatrix.rows());
 		errorMatrix = (_data->normalMatrix * m_velocityFieldUpdated[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-
-		/*for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}*/
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
-
 
 		return true;
 	}
 	return false;
 
-/*
-	int _index ;
-
-	if ( getIndex(x,y,z,_index)  )
-	{
-		VelocityData *_data = m_measurementField[_index];
-
-		errorMatrix = Eigen::MatrixXf::Zero(_data->normalMatrix.rows(), _data->normalMatrix.cols());
-
-		Eigen::VectorXf _error = (_data->normalMatrix * m_velocityFieldUpdated[_index] - _data->velocityVector);
-		
-
-		//std::cout << "Normals: " << _data->normalMatrix << std::endl;
-
-		//std::cout <<  "Error: " << _error.transpose() <<std::endl;
-		
-		for(int i=0;i<_data->normalMatrix.rows();i++)
-		{
-			// actually this should not be norm but squared only
-			errorMatrix.row(i) = (_data->normalMatrix.row(i) * _error(i));
-		}
-
-		//std::cout << "Error Matrix: " << errorMatrix << std::endl;
-
-
-		return true;
-	}
-	return false;*/
 }
 
 bool Reconstruction::updateVelocity(const int &x, const int &y, const int &z, const Eigen::Vector3f &velocity)
@@ -750,20 +625,7 @@ void Reconstruction::saveNormalPlaneAsMAT()
 	
 
 	double counter = 0.0;
-	/*for (int y=0;y<10;y++)
-	{
-		for(int x=0;x<10;x++)
-		{
-			for(int z=0;z<3;z++)
-			{
-				counter += 1.0;
-
-				std::cout << counter << std::endl;
-				memcpy(pdata,&counter,mxGetElementSize(pa1));
-				pdata+=mxGetElementSize(pa1);
-			}
-		}
-	}*/
+	
 	for(int x=0;x<m_roiWidth;x++)
 	{
 		for (int y=0;y<m_roiHeight;y++)
@@ -771,7 +633,6 @@ void Reconstruction::saveNormalPlaneAsMAT()
 			const int _index = y*m_roiWidth+x;
 			const Eigen::Vector3d normal = m_normalPlane[_index].cast<double>();
 
-			//std::cout << normal << std::endl;
 
 			memcpy(pdata,&normal[0],mxGetElementSize(pa1));
 			memcpy(pdata+m_roiHeight*m_roiWidth*mxGetElementSize(pa1),&normal[1],mxGetElementSize(pa1));
@@ -984,14 +845,6 @@ bool Reconstruction::approximateVelocityVector(const Eigen::Vector3f &worldPosit
 	{
 		VelocityData *_data = m_measurementField[_index];
 
-		/*Eigen::MatrixXf D = _data->normalMatrix;
-		Eigen::MatrixXf A = D.transpose() * D;
-		Eigen::VectorXf b = D.transpose() * _data->velocityVector;
-
-		A.llt().solve(b,&velocity);   // using a LLT factorization
-		A.ldlt().solve(b,&velocity);  // using a LDLT factorization
-		*/
-
 		velocity = _data->normalMatrix.svd().solve(_data->velocityVector);
 		return true;
 	}
@@ -1125,12 +978,6 @@ bool Reconstruction::approximateVelocityVector(const int &x, const int &y, const
 		Eigen::FullPivLU<Eigen::MatrixXf> _normalMatrixLU(_data->normalMatrix);
 		// insufficient rank condition
 		
-		//std::cout << "Orientations: " << std::endl << _data->normalMatrix << std::endl << std::endl;
-
-		/*std::cout << "Velocities: " << std::endl << _data->velocityVector << std::endl << std::endl;
-
-		std::cout << "Frames: " << std::endl << _data->frameVector << std::endl << std::endl;
-*/
 
 		if ( _normalMatrixLU.rank() < 3 )
 			return false;/**/
@@ -1146,41 +993,14 @@ bool Reconstruction::approximateVelocityVector(const int &x, const int &y, const
 		velocity = _data->normalMatrix.svd().solve(_data->velocityVector);
 		Eigen::VectorXf _testSV = _data->normalMatrix.svd().singularValues();
 
-		conditionNumber = _testSV(0) / _testSV(_testSV.rows()-1);
-
-
-		//std::cout << _testSV.transpose() << std::endl;
-
-
-
-		/*if ( x == m_dimX/2 && y == m_dimY/2 && z == m_dimZ/2)
-		{
-			std::cout << "A: " << std::endl << _data->normalMatrix << std::endl << std::endl;
-
-			std::cout << "b: " << std::endl << _data->velocityVector << std::endl << std::endl;
-
-			std::cout << "Solution: " << std::endl << velocity << std::endl;
-		}*/
+		conditionNumber = _testSV(0) / _testSV(_testSV.rows()-1);	
 
 		error = (_data->normalMatrix * velocity - _data->velocityVector).norm();
 
 		_data->approximationError = error;
-		/*if ( error == error )
-		{*/
-
-		/*std::cout << "Frames: " << std::endl << _data->frameVector << std::endl << std::endl;
-
 		
-		std::cout << "Norm: " << (_data->normalMatrix * velocity - _data->velocityVector).norm() << std::endl;
-
-		std::cout << "Solution: " << std::endl << velocity << std::endl << std::endl << std::endl ;
-		*/
-		//}
 		return (error == error);
 		
-		//char c;
-		//std::cin >> c;
-		//return true;
 	}
 	else
 		return false;
@@ -1208,10 +1028,7 @@ bool Reconstruction::getMeasurementData(const Eigen::Vector3f &worldPosition, Ei
 bool Reconstruction::pushMeasurement( const Eigen::Vector3f &normal, const float &velocity, const int &_index, const int &frame)
 {
 
-	/*int _index;
-
-	if ( getIndex(worldPosition, _index) )
-	{*/
+	
 		VelocityData *_data = m_measurementField[_index];
 
 		if ( _data->normalMatrix.rows() > 0 && _data->normalMatrix.cols() > 0 )
@@ -1243,9 +1060,7 @@ bool Reconstruction::pushMeasurement( const Eigen::Vector3f &normal, const float
 		_data->frameVector = Eigen::VectorXi(1);
 
 		_data->frameVector(_data->frameVector.size()-1) = frame;
-		//(data);
+
 		return true;
-	/*}
-	else
-		return false;*/
+	
 }
